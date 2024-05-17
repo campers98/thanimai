@@ -7,29 +7,29 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "24086498"))
+API_HASH = getenv("API_HASH", "0c459b186767a4634604c740c001c0c3")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6066551482:AAFGSZt2moW7SpyFzVihoffOFKUSMpWGojQ")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","ALONE_WAS_BOT")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "Testingssz")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "AloneXMusicBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "SvD_chatfight_bot")
 # Don't Add style font 
-BOT_NAME = getenv("BOT_NAME" , "Alone Music")
+BOT_NAME = getenv("BOT_NAME" , "SVD chat bot")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "AloneXHelper")
+ASSUSERNAME = getenv("ASSUSERNAME" , "Songjoker1")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb://clve73lfu001ha4me1al6gw90:UTfT7DjJGjwyvbdXaM1hDrVj@104.251.218.202:9013/?readPreference=primary&ssl=false")
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1000))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 50000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001975251757"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6079943111))
+OWNER_ID = int(getenv("OWNER_ID", 5759576247))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -39,7 +39,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamAloneOp/AloneXMusic",
+    "https://github.com/campers98/thanimai",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -54,8 +54,8 @@ AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "1c21247d714244ddbb09925dac565aed")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "709e1a2969664491b58200860623ef19")
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
